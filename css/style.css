@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* CONTAINER */
 .container {
   margin: 0 auto;
@@ -48,15 +52,13 @@ ul {
 header > section:nth-child(1) {
   height: 80px;
   /* DEBUG */
-  background-color: lightblue;
+  background-color: rgba(37, 94, 233, 1);
 }
 
 .head_logo,
 .head_menu,
 .head_login {
   padding: 10px;
-  /* DEBUG */
-  background-color: rgb(255, 251, 134);
 }
 
 .head_logo,
@@ -69,7 +71,7 @@ header > section:nth-child(1) {
 }
 
 .head_login{
-  text-align: right;
+  text-align: right;  
 }
 
 .head_menu ul li{
@@ -80,6 +82,22 @@ header > section:nth-child(1) {
   text-align: center;
 }
 
+.head_menu a, .head_login a{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.head_menu a{
+  color: white; 
+  padding: 0.3em;
+}
+
+.head_login a{
+  color: black;
+  background-color: white; 
+  border-radius: 1.5em;
+  padding: 0.8em 0.9em;
+}
 /* Banner */
 header > section:nth-child(2) {
   /* DEBUG */
