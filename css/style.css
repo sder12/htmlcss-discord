@@ -172,9 +172,17 @@ header > section:nth-child(2) {
 
 .frame_pink {
   width: 40%;
-  /* DEBUG */
-  height: 300px;
-  background-color: pink;
+  text-align: left;
+}
+
+.frame_pink h2{
+  font-size: 2.8rem ;
+}
+
+.frame_pink p{
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  margin-top: 1.5em;
 }
 
 /* Centered Row */
