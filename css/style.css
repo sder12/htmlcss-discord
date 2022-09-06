@@ -8,7 +8,7 @@
 /* COMMON */
 html {
   font-size: 62, 5%;
-  font-family: "Whitney", Helvetica, Arial, sans-serif;
+  font-family: Whitney, Helvetica, Arial, sans-serif;
 }
 
 .border {
@@ -48,11 +48,16 @@ a{
 
 /* HEADER */
 
+header{
+  background-image: url("../img/jumbo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
 /* Nav */
 header > section:nth-child(1) {
   height: 80px;
-  /* DEBUG */
-  background-color: rgba(37, 94, 233, 1);
 }
 
 .head_logo,
@@ -98,19 +103,49 @@ header > section:nth-child(1) {
   border-radius: 1.5em;
   padding: 0.8em 0.9em;
 }
+
 /* Banner */
 header > section:nth-child(2) {
-  /* DEBUG */
-  background-color: blue;
-  height: 400px;
+  min-height: 400px;
 }
 
 .head_jumbo_text {
-  width: 60%;
-  padding: 5em 3em;
-  /* DEBUG */
-  background-color: fuchsia;
+  width: 80%;
+  margin: 4em 0;
+  /* padding: 3em 3em; */
+  text-align: center;
+  color: white;
 }
+
+ .head_jumbo_text h1{
+  font-size: 2.5rem;
+  padding-bottom: .5em;
+ }
+
+ .head_jumbo_text p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding-bottom: 2em;
+}
+
+.banner_btn a{
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 1.5em;
+  padding: 0.7em 1em;
+  margin: 0 0.8em;
+}
+
+.banner_btn > a:nth-child(1) {
+  background-color: white;
+  color: black;
+}
+
+.banner_btn > a:nth-child(2){
+  background-color: rgba(35, 39, 42, 1);
+  color: white;
+}
+
 
 /* MAIN */
 .main_three {
