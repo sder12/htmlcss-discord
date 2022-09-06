@@ -313,6 +313,8 @@ footer > section:nth-child(2) {
 .wave{
   width: 100%;
   opacity: 0.1;
+  vertical-align: bottom;
+  /* altra soluzione: mettere display:inline-block or block ad <img>*/
 }
 
 .rotate{
