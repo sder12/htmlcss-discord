@@ -13,7 +13,7 @@ html {
 
 .border {
   border: 1px dashed black;
-}               
+}
 
 .wborder {
   border: 1px dashed white;
@@ -23,7 +23,7 @@ ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ a{
 }
 
 /* FLEXBOX */
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,10 +45,9 @@ a{
   display: flex;
 }
 
-
 /* HEADER */
 
-header{
+header {
   background-image: url("../img/jumbo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,31 +74,33 @@ header > section:nth-child(1) {
   width: 60%;
 }
 
-.head_login{
-  text-align: right;  
+.head_login {
+  text-align: right;
 }
 
-.head_menu ul li{
-  display: inline-block;  
+.head_menu ul li {
+  display: inline-block;
 }
 
-.head_menu ul{
+.head_menu ul {
   text-align: center;
 }
 
-.head_menu a, .head_login a{
+.head_menu a,
+.head_login a,
+.frame_green a {
   font-size: 1.1rem;
   font-weight: 500;
 }
 
-.head_menu a{
-  color: white; 
+.head_menu a {
+  color: white;
   padding: 0.3em;
 }
 
-.head_login a{
+.head_login a {
   color: black;
-  background-color: white; 
+  background-color: white;
   border-radius: 1.5em;
   padding: 0.8em 0.9em;
 }
@@ -117,18 +118,19 @@ header > section:nth-child(2) {
   color: white;
 }
 
- .head_jumbo_text h1{
+.head_jumbo_text h1 {
   font-size: 2.5rem;
-  padding-bottom: .5em;
- }
+  padding-bottom: 0.5em;
+}
 
- .head_jumbo_text p{
+.head_jumbo_text p {
   font-size: 1.2rem;
   line-height: 2rem;
   padding-bottom: 2em;
 }
 
-.banner_btn a{
+.banner_btn a,
+.frame_green a {
   text-align: center;
   font-size: 1.2rem;
   border-radius: 1.5em;
@@ -141,11 +143,10 @@ header > section:nth-child(2) {
   color: black;
 }
 
-.banner_btn > a:nth-child(2){
+.banner_btn > a:nth-child(2) {
   background-color: rgba(35, 39, 42, 1);
   color: white;
 }
-
 
 /* MAIN */
 .main_three {
@@ -166,7 +167,7 @@ header > section:nth-child(2) {
   width: 60%;
 }
 
-.frame_blue img{
+.frame_blue img {
   width: 100%;
 }
 
@@ -175,11 +176,12 @@ header > section:nth-child(2) {
   text-align: left;
 }
 
-.frame_pink h2{
-  font-size: 2.8rem ;
+.frame_pink h2 {
+  font-size: 2.8rem;
 }
 
-.frame_pink p{
+.frame_pink p,
+.frame_green p {
   font-size: 1.2rem;
   line-height: 1.5em;
   margin-top: 1.5em;
@@ -190,10 +192,30 @@ header > section:nth-child(2) {
 .frame_green {
   width: 100%;
   text-align: center;
+  margin: 3em 0;
 }
 
-.frame_green img{
+.frame_green img {
   width: 80%;
+}
+
+.frame_green h2 {
+  font-size: 2rem;
+}
+
+.frame_green h4 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-image: url("../img/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 2em;
+}
+
+.frame_green a {
+  background-color: rgba(114, 137, 218, 1);
+  color: white;
 }
 
 /* FOOTER */
@@ -202,16 +224,16 @@ footer {
   background-color: black;
 }
 
-footer > section:nth-child(1){
+footer > section:nth-child(1) {
   min-height: 300px;
   border-bottom: 1px solid white;
   padding-top: 1em;
 }
 
-footer > section:nth-child(2){
+footer > section:nth-child(2) {
   min-height: 90px;
   /* senza mettere il flex utilizzo il padding  */
-  padding-top: .5em;
+  padding-top: 0.5em;
   padding-bottom: 5em;
 }
 
@@ -220,19 +242,18 @@ footer > section:nth-child(2){
 .footcol {
   width: 16%;
   /* DEBUG */
-  min-height:  250px;
+  min-height: 250px;
   background-color: lightseagreen;
 }
 
 .footcol_big {
   width: 36%;
   /* DEBUG */
-  min-height:  250px;
+  min-height: 250px;
   background-color: lightcoral;
 }
 
 /* Footer Registration */
-
 
 .footer_lightframe {
   width: 100%;
