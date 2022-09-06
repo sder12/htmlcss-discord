@@ -164,9 +164,10 @@ header > section:nth-child(2) {
 
 .frame_blue {
   width: 60%;
-  /* DEBUG */
-  height: 300px;
-  background-color: aqua;
+}
+
+.frame_blue img{
+  width: 100%;
 }
 
 .frame_pink {
@@ -180,9 +181,11 @@ header > section:nth-child(2) {
 
 .frame_green {
   width: 100%;
-  /* DEBUG */
-  height: 400px;
-  background-color: green;
+  text-align: center;
+}
+
+.frame_green img{
+  width: 80%;
 }
 
 /* FOOTER */
