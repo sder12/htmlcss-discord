@@ -11,13 +11,13 @@ html {
   font-family: Whitney, Helvetica, Arial, sans-serif;
 }
 
-.border {
+/* .border {
   border: 1px dashed black;
 }
 
 .wborder {
   border: 1px dashed white;
-}
+} */
 
 ul {
   list-style: none;
@@ -43,6 +43,12 @@ a {
 
 .flex {
   display: flex;
+}
+
+.flex-container-foot {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
 }
 
 /* HEADER */
@@ -130,7 +136,7 @@ header > section:nth-child(2) {
 }
 
 .banner_btn a,
-.frame_green a{
+.frame_green a {
   text-align: center;
   font-size: 1.2rem;
   border-radius: 1.5em;
@@ -213,7 +219,7 @@ header > section:nth-child(2) {
   margin-bottom: 2em;
 }
 
-.frame_green a{
+.frame_green a {
   background-color: rgba(114, 137, 218, 1);
   color: white;
 }
@@ -225,7 +231,7 @@ footer {
 }
 
 footer > section:nth-child(1) {
-  min-height: 300px;  
+  min-height: 300px;
   padding-top: 1em;
 }
 
@@ -240,16 +246,10 @@ footer > section:nth-child(2) {
 
 .footcol {
   width: 16%;
-  /* DEBUG */
-  min-height: 250px;
-  background-color: lightseagreen;
 }
 
 .footcol_big {
   width: 36%;
-  /* DEBUG */
-  min-height: 250px;
-  background-color: lightcoral;
 }
 
 /* Footer Registration */
@@ -257,7 +257,6 @@ footer > section:nth-child(2) {
 .footer_lightframe {
   width: 100%;
   justify-content: space-between;
-  align-items: center;
   border-top: 1px solid white;
   padding-top: 1em;
 }
@@ -266,11 +265,53 @@ footer > section:nth-child(2) {
   padding: 5px;
 }
 
-.footer_btn a{
-  color: white; 
+.footer_btn a {
+  color: white;
   text-align: center;
   background-color: rgba(114, 137, 218, 1);
   border-radius: 1.5em;
   padding: 0.7em 1em;
   margin: 0 0.8em;
+}
+
+.footcol ul {
+  padding: 1em;
+  font-size: 1rem;
+}
+
+.footcol li {
+  color: white;
+  padding-top: 1rem;
+}
+
+.footcol ul > li:first-child,
+.footcol_big h4 {
+  color: rgba(114, 137, 218, 1);
+}
+
+/* footer big column */
+
+.footcol_big {
+  padding: 1.5em 1em;
+}
+
+.footcol_big h4 {
+  font-size: 2rem;
+  padding-bottom: 0.8em;
+}
+
+.footcol_big div{
+  color: white;
+  font-size: 1rem;
+}
+
+.footcol_big div img{
+  width: 10%;
+  margin-right: .5em;
+}
+
+.foot_icons i{
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-right: 0.3em;
 }
