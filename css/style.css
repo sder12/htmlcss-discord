@@ -25,6 +25,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* CONTAINER */
@@ -177,7 +178,7 @@ header > section:nth-child(2) {
 }
 
 .frame_pink h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 
 .frame_pink p,
@@ -302,7 +303,7 @@ footer > section:nth-child(2) {
   padding-top: 1rem;
 }
 
-.footcol ul > li:first-child,
+.footcol ul > h4,
 .footcol_big h4 {
   color: rgba(114, 137, 218, 1);
 }
@@ -320,3 +321,15 @@ footer > section:nth-child(2) {
 .rotate{
   transform: rotate(180deg);
 }
+
+/* 
+1.  Immagine impostare sempre di default max-width:100%
+2.  togliere sempre i min-height (sono DEBUG) 
+    tranne che nel footer o nel banner
+3.  nei link del nav orizzontali meglio utilizzare margin 
+    perchè padding è cliccabile 
+4.  creo classi nel common es. mr-1 (margin-right 1em) x aggruppare e < codice
+5.  creo commenti nel COMMON es. Typography per raggruppare classi riutilizzate
+6.  è possibile cambiare il colore dell'svg con fill e poi inserire il codice nel html! 
+    (nb: non l'url dell'immagine ma tutto il codice) -- svantaggi: il codice si allunga 
+*/
